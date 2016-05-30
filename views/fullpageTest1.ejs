@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet" />
+    <link href="/stylesheets/resume.css" rel="stylesheet" />
     <title>Full Page Test1</title>
 </head>
 <body>
+
+    <!-- page2 -->
     <div id="Homepage" class="wrap">
         <header>
             <p><span class="chapter">1</span></p>
@@ -21,15 +25,96 @@
                 <p>Greatness Form Small Beginning</p>
                 <footer>Francis Drake quoted in <cite title="Source Title">Uncharted 3</cite></footer>
             </blockquote>
+            <div class="label-group">
+                <a href="https://github.com/MRmac1"><span class="label label-default">github</span></a>
+                <a href="http://mrmac1.github.io/"><span class="label label-info">blog</span></a>
+                <a href="https://www.zhihu.com/people/tracyzhou-74"><span class="label label-primary">知乎</span></a>
+            </div>
+
         </section>
     </div>
 
-    <div id="basicInformation" class="wrap">
+
+    <!-- page2 -->
+    <div id="basicInfo" class="wrap">
         <header>
             <p><span class="chapter">2</span></p>
             <h3 class="chapterName">basic</h3>
         </header>
+
+        <div class="page-content">
+            <div class="basicContent">
+                <section class="horizontal-divider">
+                    <span class="glyphicon glyphicon-tag" aria-hidden="true"></span>
+                    个人相关
+                </section>
+                <div class="container">
+                    <div class="row basicInfo">
+                        <div class="col-md-4 basicImage">
+                            <img src="/images/gravatar.jpeg" alt="avatar" class="img-thumbnail">
+                        </div>
+                        <div class="col-md-8 basicText">
+                            <p><span class="glyphicon glyphicon-user" aria-hidden="true"></span>性别：男</p>
+                            <p><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>出生日期：1991.10.22</p>
+                            <p><span class="glyphicon glyphicon-road" aria-hidden="true"></span>毕业院校：东华大学(上海211院校)</p>
+                            <p><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>专业：信息安全</p>
+                            <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>居住地：深圳南山</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="workContent">
+                <section class="horizontal-divider">
+                    <span class="glyphicon glyphicon-tags" aria-hidden="true"></span>
+                    工作相关
+                </section>
+                <div class="container">
+                    <div class="row basicInfo">
+                        <div class="col-md-8">
+                            <p><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>工作年限：3年</p>
+                            <p><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>现所在公司：友宝公司</p>
+                            <p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span>职位：软件开发工程师</p>
+                            <p><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>目前技术方向：nodeJS，React & React Native，
+                                Python，PHP</p>
+                            <p><span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>技术愿景：做一个会设计的全栈工程师</p>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- page 3 -->
+    <div id="TechPage" class="wrap">
+        <header>
+            <p><span class="chapter">3</span></p>
+            <h3 class="chapterName">tech stack</h3>
+        </header>
+
     </div>
-    <script type="text/javascript" src="/javascripts/resumeTest1.js"></script>
+
+    <!-- page 4 -->
+    <div id="workExperience" class="wrap">
+        <header>
+            <p><span class="chapter">4</span></p>
+            <h3 class="chapterName">workExperience</h3>
+        </header>
+
+    </div>
+
+    <!-- page 5 -->
+    <div id="contackMe" class="wrap">
+        <header>
+            <p><span class="chapter">5</span></p>
+            <h3 class="chapterName">contackMe</h3>
+        </header>
+
+    </div>
+
+
+
+    <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.scrollify.min.js"></script>
+    <script type="text/javascript" src="/javascripts/static/resume.js"></script>
 </body>
 </html>

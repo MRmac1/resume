@@ -1,17 +1,27 @@
 @font-face {
     font-family: snell; /*这里是说明调用来的字体名字*/
-    src: url('../font/Snell.ttf');
-    src: url('../font/Snell.ttf') format('truetype'),
-         url('../font/Snell.otf') format('opentype');
+    src: url('../fonts/Snell.ttf');
+    src: url('../fonts/Snell.ttf') format('truetype'),
+         url('../fonts/Snell.otf') format('opentype');
 }
 
 #Homepage {
     background-color: #F7F7F7;
 }
 
-#basicInformation {
-    background-color: #C1A075;
+#Homepage .chapter {
+    color: #2F2D2E;
 }
+
+#basicInfo {
+    background-color: #2F2D2E;
+    /*background-color: #FFFFFF;*/
+}
+
+#basicInfo .chapter {
+    color: #F7F7F7;
+}
+
 
 /*下面是通用的*/
 .wrap {
@@ -84,3 +94,80 @@ header {
     -webkit-text-fill-color: transparent;
 }
 
+.label-group > a:hover {
+
+}
+
+.horizontal-divider {
+    margin: 15px auto;
+    padding: 20px;
+    color: #f5f5f5;
+    display: table;
+    white-space: nowrap;
+    height: auto;
+    overflow: hidden;
+    line-height: 1;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: .05em;
+}
+
+.horizontal-divider::before {
+    background-position: right 1em top 50%;
+}
+
+.horizontal-divider::after {
+    background-position: left 1em top 50%;
+}
+
+.horizontal-divider::before, .horizontal-divider::after {
+    content: '';
+    display: table-cell;
+    position: relative;
+    top: 50%;
+    width: 45%;
+    background-repeat: no-repeat;
+    background-image: url('/images/line.png');
+}
+
+.page-content {
+    width: 90%;
+    margin: 15px auto;
+}
+
+.basicContent, .workContent {
+    font-size: 18px;
+    color: #f5f5f5;
+    font-family: STKaiti;
+    margin-bottom: 30px;
+}
+
+.basicImage > img {
+    width: 200px;
+    height: 200px;
+    clear: both;
+    display: block;
+    margin: 10px auto;
+}
+
+.basicText {
+    margin-top: 30px;
+}
+
+.basicContent span {
+    color: #FFDA30;
+    padding-right: 10px;
+}
+
+.workContent span {
+    color: #0299ff;
+    padding-right: 10px;
+}
+
+.basicInfo {
+    padding: 30px;
+}
+
+.basicInfo > div > p > span{
+    padding-right: 30px;
+}
